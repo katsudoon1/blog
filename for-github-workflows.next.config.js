@@ -4,7 +4,7 @@ const repoName = process.env.REPO_NAME || '';
 const nextConfig = {
   basePath: `/${repoName}`,
   assetPrefix: `/${repoName}/`,
-  output: 'export',
+  output: 'standalone',
 };
 
 module.exports = nextConfig;
