@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import PostList from '@/components/PostList';
 
 export default function Home() {
   // ここには、APIから取得した投稿のデータを配置します。
@@ -28,6 +29,7 @@ export default function Home() {
 
       <main className='container mx-auto my-8'>
         <h1 className='text-4xl font-bold mb-6'>最新の投稿</h1>
+        <PostList posts={posts} />
         <div>
           {posts.map((post) => (
             <div key={post.id} className='mb-4 p-4 shadow'>
